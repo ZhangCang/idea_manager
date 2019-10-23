@@ -1,11 +1,5 @@
 package com.bjsxt.pojo;
 
-/**
- * @Auther: http://www.bjsxt.com
- * @Date: 2018/11/23 0023
- * @Description: com.bjsxt.pojo
- * @version: 1.0
- */
 public class Users {
     private Integer userid;
     private String username;

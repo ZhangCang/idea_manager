@@ -12,10 +12,9 @@ public class UsersController {
 
     @Autowired
     private UsersService usersService;
-
     @RequestMapping("/addUser")
     public String addUser(Users users){
-        this.usersService.addUser(users);
+        usersService.addUser(users);
         return "ok";
     }
 }

@@ -8,12 +8,10 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class UsersServiceImpl implements UsersService {
-
     @Autowired
     private UsersMapper usersMapper;
-
     @Override
     public void addUser(Users users) {
-        this.usersMapper.insertUser(users);
+        usersMapper.insertUser(users);
     }
 }

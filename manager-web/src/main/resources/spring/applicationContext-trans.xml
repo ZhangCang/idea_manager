@@ -24,9 +24,8 @@
    		<tx:method name="find*" read-only="true"/>
    	</tx:attributes>
    </tx:advice>
-
-   <!-- 那些类下的方法需要参与到当前的事物管理中 。配置切点 -->
-   <aop:config>
-   	<aop:advisor advice-ref="advice" pointcut="execution(* com.bjsxt.service.*.*(..))"/>
-   </aop:config>
+	<!-- 那些类下的方法需要参与到当前的事物管理中 。配置切点 -->
+	<aop:config>
+		<aop:advisor advice-ref="advice" pointcut="execution(* com.bjsxt.service.*.*(..))"/>
+	</aop:config>
 </beans>

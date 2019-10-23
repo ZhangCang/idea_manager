@@ -14,12 +14,11 @@ public class ManagerTest {
 
     @Autowired
     private UsersMapper usersMapper;
-
     @Test
     public void insertUserTest(){
         Users users = new Users();
-        users.setUserage(20);
-        users.setUsername("admin");
-        this.usersMapper.insertUser(users);
+        users.setUsername("rose");
+        users.setUserage(23);
+        usersMapper.insertUser(users);
     }
 }
